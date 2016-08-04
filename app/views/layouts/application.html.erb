@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Screencaster</title>
+    <%= csrf_meta_tags %>
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <%= javascript_include_tag 'application' %>
+  </body>
+</html>

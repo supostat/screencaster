@@ -1,0 +1,65 @@
+// Place all the styles related to the ScreenCast controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background-color: #333;
+  font-family: 'Roboto', 'Open Sans', 'Lucida Grande', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #fff;
+}
+
+#gum {
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  transition: opacity 1s;
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: block;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+#icons {
+  bottom: 77px;
+  left: 6vw;
+  position: absolute;
+  &.active {
+    svg, button {
+      transform: translateX(0);
+    }
+  }
+
+  button {
+    transition: 280ms;
+    transform: translateX(calc(-6vw - 125px));
+    display: block;
+    margin: 0 0 3vh 0;
+  }
+}
+#container {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}

@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: developer
+  password: developer
+
+development:
+  <<: *default
+  database: screencaster_development
+
+test: &test
+  <<: *default
+  database: screencaster_test
+
+production:
+  <<: *default
+  database: screencaster_production
